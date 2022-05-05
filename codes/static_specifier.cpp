@@ -23,9 +23,14 @@ class MyClass
 {
     public:
         static int var; // declare a static data member
+        static void func();
 };
 
 int MyClass::var = 7; // define a static data member
+void MyClass::func()
+{
+    std::cout << "Hello World from a static member function.";
+}
 
 int main()
 {
@@ -50,6 +55,9 @@ int main()
     MyClass o3;
     std::cout << "var: " << o3.var << std::endl;
     /* Output >> var: 3 */
+
+    MyClass::func();   // call a static member function
+    /* Output >> Hello World from a static member function. */
 
     return 0;
 }
