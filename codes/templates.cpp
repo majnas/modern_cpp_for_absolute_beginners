@@ -13,7 +13,6 @@ void funcA(int param)
     std::cout << "The int value is: " << param << std::endl;
 }
 
-
 template <typename T, typename U>
 void funcB(T t, U u)
 {
